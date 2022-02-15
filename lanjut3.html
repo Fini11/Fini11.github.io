@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="test3.css"/>
+	<title>Document</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+<body>
+<audio id="myAudio">
+   <source src="Audio1.mpeg" type="audio/mpeg">
+</audio>
+<section>
+	
+	<button onclick="playAudio()" type="button" id="hilang" class="box" style="border: solid 1px #eceff5; background: #29447E; padding: 15px; text-align: justify; line-height: 23px; color: white; font-size: 18px; text-align: center;" class="box">SIAP?</button>
+	
+<div style="display: none; background-image: url('gambar1.jpg'); background-size: cover; width: 100vw; height: 100vh" id="siap">
+
+	<div style=" position: absolute; top: 45%; right: 20%; left: 20%;">
+		
+
+<h1 style="border: solid 1px #eceff5; background: #29447E; padding: 15px; text-align: justify; line-height: 23px; color: white; font-size: 18px; text-align: center;" class="box">Apakah kamu melihat bangunan runtuh?</h1>
+<button type="button" class="box" style="border: solid 1px #eceff5; background: #29447E; padding: 15px; margin:0; text-align: justify;line-height: 23px; color: white; font-size: 18px"><a href= "lanjut4.html" class="Tombol">Iya</a></button>
+<button onclick="pauseAudio()" type="button" class="box" style="border: solid 1px #eceff5; background: #29447E; padding: 15px; margin:0; text-align: justify;line-height: 23px; color: white; font-size: 18px">Tidak</button>
+	
+	</div>
+
+</div>
+
+
+</section>
+
+</div>
+<script>
+var x = document.getElementById("myAudio"); 
+
+function playAudio() { 
+  x.play(); 
+  document.getElementById('hilang').style.display = "none";
+  document.getElementById('siap').style.display = "block";
+  document.getElementById('coba').style.display = "block";
+ 
+} 
+
+function pauseAudio() { 
+  x.pause(); 
+} 
+</script>
+</body>
+</html>
